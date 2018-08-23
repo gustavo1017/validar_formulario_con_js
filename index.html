@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicio DOM, Eventos y funciones</title>
+	<script type="text/javascript" src="js/main.js" ></script>
+	<style>
+		.box{
+			width: 200px;
+			height: 250px;
+			float: left;
+			margin: 20px;
+		}
+		.dashed{
+			border: 3px dashed black;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>ejercicio DOM, Eventos y funciones</h1>
+	<div class="box">
+	<p>
+		<form action="#" method="POST" id="formulario" onsubmit="return false;">
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre">
+			<span id="error_nombre"></span>
+			<br>
+			<label for="apellidos">Apellidos</label>
+			<input type="text" name="apellidos" id="apellidos">
+			<br>
+			<label for="edad">Edad</label>
+			<input type="number" name="edad" id="edad">
+			<br>
+			<input type="submit" value="Enviar" id="submit">
+
+		</form>
+
+	</p>
+	</div>
+
+	<div class="box dashed">
+		<h3>Informacion del usuario</h3>
+		<p id="p_nombre">
+			Nombre <span></span>
+		</p>
+		<p id="p_apellidos">
+			Nombre <span></span>
+		</p>
+		<p id="p_edad">
+			Nombre <span></span>
+		</p>
+
+	</div>
+
+</div>
+</div>
+</body>
+</html>
